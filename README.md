@@ -1,3 +1,3 @@
 # PokemonOOP
-Learing JAVA &amp; OOP 
+Learning JAVA &amp; OOP 
 8/2/63
