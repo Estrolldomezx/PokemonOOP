@@ -12,9 +12,7 @@ import java.util.Scanner;
  * @author Admin
  */
 public class Pokemon {
-    //Scanner select = new Scanner(System.in);
-    //int kb = select.nextInt();
-    //public static int pokeBall = 10;
+
     Double myCP;
     Double myHP;
     Double firstHP;
@@ -23,30 +21,7 @@ public class Pokemon {
     public static String fight;
     public static String health;
     public static String berry;
-    
-   /* public void pokemonCatch(String pokemonC) {
-        if("Y".equals(pokemonC) || "y".equals(pokemonC) || "YES".equals(pokemonC) || "yes".equals(pokemonC)) {
-            Double rand = Math.random();
-            rand = rand*100;
-            System.out.println("Chance to catch = " + new DecimalFormat("0.00").format(rand) + " %");
-                if(rand >= 50){
-                    System.out.print(">> SUCSESS << You got ");
-                    pokemonList(rand);
-                    ball--;
-                    System.out.println("Your ball = " + ball);
-                    pokemonAtk();
-                }
-                else {
-                    System.out.println(">> FAIL << Try again, Good luck.");
-                    System.out.print("Do you want to play again? (Y) YES (N) NO => ");
-                    pokemonC = kb.nextLine();
-                    pokemonCatch(pokemonC);
-                }
-            }
-        else
-            System.out.println("See you later.");
-    }
-*/
+
     public void pokemonList(int kb) {
         switch (kb) {
             case 1:
@@ -183,22 +158,8 @@ public class Pokemon {
             System.out.println("Enemy Attack !");
             myHP = myHP - eneCP;
             System.out.println("Arghh my pokemon HP is " + myHP);
+        }
 
-        }
-        /*Double rand3;
-        rand3 = rand2*100;
-        System.out.print("Do you want to Pokemon attack another player? (Y) Yes , (N) No => ");
-      //  pokemonAttack = kb.nextLine();
-        if("Y".equals(fight) || "y".equals(fight) || "YES".equals(fight) || "yes".equals(fight)) {
-            System.out.println("Your Pokemon loses power = " + new DecimalFormat("0.00").format(rand3) + " %");
-            cp = (cp - (cp * rand2));
-            System.out.println("Your Pokemon power = " + new DecimalFormat("0.0").format(cp));
-        }
-        else{
-            System.out.println("Your Pokemon power = " + cp);
-        }*/
-        
-        
         choice();
     }
 
@@ -215,17 +176,6 @@ public class Pokemon {
     }
 
     public void feed() {
-        /*System.out.print("Do you want to feed the pokemon? (Y) Yes , (N) No => ");
-      //  pokemonFood = kb.nextLine();
-        if("Y".equals(berry) || "y".equals(berry) || "YES".equals(berry) || "yes".equals(berry)) {
-            cp += 50;
-            System.out.println("Berry give energy for Pokemon = 50");
-            System.out.println("Your Pokemon eat Berry, total power = " + cp);
-        }
-        else{
-            cp = foodPower;
-            System.out.println("Your Pokemon power = " + new DecimalFormat("0.0").format(cp));
-        }*/
         System.out.println("Give a berry to my Pokemon");
         System.out.println("  (^w^)   )//  ");
         myCP += 5; 
